@@ -1,0 +1,1564 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.example-tube h2, .example-tube h3, .example-tube p {
+    color: white;
+    padding-bottom: 1rem;
+}
+
+.example-tube .inputrow {
+    display: flex;
+}
+
+.example-tube input[type="submit"] {
+    padding: 1rem;
+    font-size: 1.25rem;
+    color: white;
+    background: none;
+    border: thin solid white;
+    margin: 1rem 0;
+}
+
+.example-divider {
+    margin: 1rem 0;
+    height: 2px;
+    width: 100%;
+    background: white;
+}
+
+/* ----------------------------------------------------------------------------- 
+
+------------------ UTILITIES ---------------------------------------------------
+
+--------------------------------------------------------------------------------*/
+
+.desktop-hide {
+    display: none;
+}
+
+.mobile-hide {
+    display: block;
+}
+
+.rp-max-w {
+    max-width: 1300px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.rp-p-x-2 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.top-bottom-paddings {
+    padding: 0.5rem 0;
+}
+
+.rp-m-b-1 {
+    padding: 1.5rem;
+}
+
+.padding-inner {
+    padding: 4rem;
+}
+
+.main-bottom-spacer {
+    margin-bottom: 6rem;
+}
+
+.rp-btn {
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+    color: black;
+}
+
+.rp-btn-form {
+    width: 50%;
+    padding: 1rem 0 1rem 0;
+    transition: all 0.5s;
+}
+
+.section-info {
+    display: flex;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Oleo Script', cursive;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p, li {
+    font-family: 'Alegreya', serif;
+}
+
+i {
+    font-size: 30px;
+    color: #444;
+    transition: all 0.5s;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Alegreya', serif;
+    transition: all 0.5s;
+}
+
+a:visited, a:link, a:active {
+    color: white;
+}
+
+.strong {
+    font-weight: 600;
+}
+
+.blog-height{
+    line-height: 20px;
+}
+
+p {
+    line-height: 20px;
+}
+
+/* ------------------------------------------------
+
+----------- NAV BAR DESKTOP -----------------------
+
+--------------------------------------------------- */
+
+.header-container {
+    background: rgb(0, 0, 0);
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.header-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-list ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header-list ul li {
+    padding: 1rem 1rem;
+    transition: all 0.5s;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s;
+}
+
+.header-list h1 {
+    font-size: 2rem;
+    color: white;
+    transition: 0.5s;
+}
+
+/* ------------------------------------------------
+
+----------- SOCIAL BAR DESKTOP -----------------------
+
+--------------------------------------------------- */
+
+#social-bar {
+    position: fixed;
+    top: 40%;
+    right: 5px;
+    border: 3px solid white;
+}
+
+#ul-list {
+    display: flex;
+    padding: 1rem;
+}
+
+#social-bar #ul-list {
+    flex-direction: column;
+}
+
+#ul-list i {
+    padding: 1rem;
+    color: white;
+    font-size: 20px;
+    transition: all 0.5s;
+}
+
+#social-bar-mobile {
+    display: none;
+}
+
+
+
+/* ------------------------------------------------
+
+----------------- HEADER HOME DESKTOP -------------
+
+--------------------------------------------------- */
+
+.header-section {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-duration: 50s;
+    animation-timing-function: linear;
+}
+
+#spin-back {
+    width: 2200px;
+    height: 2200px;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-duration: 200s;
+    animation-timing-function: linear;
+}
+
+.header-section .header-content {
+    position: absolute;
+    top: 50;
+    text-align: center;
+}
+
+.header-section .header-content .card-holder {
+    display: flex;
+}
+
+.header-section .header-content .card-holder a {
+    flex: 1;
+    padding: 2rem;
+    background: white;
+    color: black;
+    border: 2px solid white;
+    transition: all 0.5s;
+}
+
+.header-section .header-content .card-holder a:nth-child(1) {
+    margin-right: 10px;
+}
+
+
+/* --------------------------------------------------
+
+--------------- CONTENT HOME ------------------------
+
+----------------------------------------------------- */
+
+.info-section {
+    background: black;
+    height: 100vh;
+}
+
+.intro-wrapper {
+    background: black;
+    padding: 4rem 0;
+}
+
+.intro-wrapper .intro {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 5rem 0;
+}
+
+.intro-wrapper .intro h2 {
+    padding-bottom: 1.5rem;
+    color: white;
+}
+
+.intro-wrapper .intro .info-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.intro-wrapper .intro .info-wrapper i {
+    font-size: 25px;
+    padding: 1rem;
+    color: white;
+}
+
+.intro-wrapper .intro .info-wrapper .line {
+    width: 100px;
+    height: 2px;
+    background: white;
+}
+
+.intro-wrapper .intro img {
+    width: 250px;
+    padding-bottom: 1.5rem;
+}
+
+.intro-wrapper .intro .info-desc {
+    width: 40%;
+    color: white;
+    padding-bottom: 1.5rem;
+}
+
+.intro-wrapper .intro .i-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.intro-wrapper .intro .i-wrapper i {
+    font-size: 25px;
+    padding: 1rem;
+    color: rgb(196, 196, 196);
+    
+}
+
+#main-intro .intro .i-wrapper i:nth-child(4) {
+    font-size: 40px;
+    
+}
+
+.graphic-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.website-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.info-section #first_set {
+    width: 100%;
+    color: white;
+    flex: 1;
+
+}
+
+.info-section #first_set h2 {
+    padding-bottom: 2rem;
+
+}
+
+.info-section p {
+    line-height: 20px;
+
+}
+
+.info-section #second_set {
+    width: 100%;
+    color: white;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-section #second_set img{
+    width: 400px;
+}
+
+/* ------------------------------------------------------
+
+------------------ CONTACT ------------------------------
+
+--------------------------------------------------------- */
+
+.contact-section {
+    background: black;
+}
+
+.form-form {
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form-wrapper {
+    width: 60%;
+    color: white;
+}
+
+label {
+    font-size: 25px;
+}
+
+input[type="text"], input[type="email"] {
+    width: 60%;
+    padding: 0.5rem;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.radio-set {
+    display: flex;
+    padding-bottom: 1rem;
+}
+
+.radio-set label {
+    padding: 0 1rem;
+}
+
+.radio-set input {
+    padding: 0 1rem;
+}
+
+input[type="checkbox"] {
+    padding-top: 3px;
+}
+
+/* ------------------------------------------------------
+
+------------------ FOOTER -------------------------------
+
+--------------------------------------------------------- */
+
+#footer {
+    padding: 2rem 0;
+    color: white;
+    text-align: center;
+    background: black;
+}
+
+#footer a {
+    color: white;
+}
+
+/* -------------------------------------------------------- 
+
+------------ OTHER PAGES ----------------------------------
+
+----------------------------------------------------------- */
+
+
+.other-header-section {
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: black;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+#circle1 {
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 100px;
+    top: 100px;
+    animation-name: circle-resize-1;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+
+#circle2 {
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 200px;
+    top: 150px;
+    animation-name: circle-resize-2;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+
+#circle3 {
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 350px;
+    top: 250px;
+    animation-name: circle-resize-1;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+
+#circle4 {
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 300px;
+    top: 250px;
+    animation-name: circle-resize-1;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+
+#circle5 {
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 500px;
+    top: 50px;
+    animation-name: circle-resize-3;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+
+/* --------------------------------------------------------
+
+----------------- GALLERY ---------------------------------
+
+----------------------------------------------------------- */
+
+#graphic-intro .intro .i-wrapper i:nth-child(2) {
+    font-size: 40px;
+}
+
+.content-wrapper {
+    background: black;
+}
+
+.image-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 25%;
+    height: auto;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 4;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+  }
+
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+    display: none;
+  }
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+
+  img.demo {
+    opacity: 0.6;
+  }
+
+  .active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.buttonContainer .btn {
+    width: 100px;
+    text-align: center;
+    padding: 1rem;
+    border: 2px solid white;
+    color: white;
+    background: black;
+    margin: .5rem;
+    transition: all 0.5s;
+}
+
+
+/* --------------------------------------------------------
+
+----------------WEBSITES ----------------------------------
+
+----------------------------------------------------------- */
+
+.website-sec {
+    background: black;
+}
+
+.tube {
+    margin: 0 0 1rem 0;
+    padding: 2rem;
+    border: 2px solid white;
+    color: white;
+}
+
+.tube:last-child {
+    margin: 0;
+}
+
+.top-sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-shoulder {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+}
+
+.right-shoulder a {
+    padding: 0.5rem;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    transition: all 0.5s;
+}
+
+.right-shoulder i {
+    font-size: 25px;
+    color: white;
+    padding: 0 1rem;
+}
+
+/* --------------------------------------------------------
+
+----------------- BLOG ------------------------------------
+
+----------------------------------------------------------- */
+
+.blog-sec {
+    background: black;
+}
+
+.blog-wrapper {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-wrapper .col {
+    padding: 1rem;
+    border: 2px solid white;
+    margin: 1rem 0;
+    background: rgb(0, 0, 0);
+    transition: all 0.5s;
+    width: 100%;
+}
+
+.blog-wrapper .col h3 {
+    color: white;
+    padding: 0 0 1rem 0;
+}
+
+.keys-wrapper {
+    display: flex;
+    padding: 1rem .5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.date {
+    color: white;
+}
+
+.keys-wrapper .keywords {
+    display: flex;
+}
+
+.keys-wrapper .keyword {
+    background: white;
+    border-radius: 25%;
+    padding: 0.25rem;
+    margin: 0 0 0 .5rem;
+    color: black;
+}
+
+.blog-wrapper .col p {
+    color: white;
+}
+
+/* ----------------------------------- */
+
+.blog-body {
+    background: black;
+    height: 800px;
+}
+
+.blog-body .blog-wrap {
+    display: flex;
+
+}
+
+.blog-body .blog-wrap .blog-top {
+    height: 100px;
+    border-bottom: 2px solid white;
+    margin-bottom: 2rem;
+
+}
+
+.blog-body .blog-wrap .side-blog-section {
+    padding-top: 4rem;
+    padding-right: 1.5rem;
+    color: white;
+    flex: 1;
+}
+
+.blog-body .blog-wrap .main-blog-section {
+    padding-top: 4rem;
+    color: white;
+    flex: 3;
+}
+
+.blog-body .blog-wrap .main-blog-section .description {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.blog-body .blog-wrap .main-blog-section .blog-single-keys {
+    display: flex;
+}
+
+.blog-body .blog-wrap .main-blog-section .blog-single-keys .keyword {
+    background: white;
+    border-radius: 25%;
+    padding: 0.25rem;
+    margin: 0 0 0 .5rem;
+    color: black;
+}
+
+.blog-body .blog-wrap .main-blog-section #blog-single-header {
+    margin-bottom: 4rem;
+}
+
+.blog-body .blog-wrap .main-blog-section .blog-content-wrapper {
+    width: 80%;
+    padding-bottom: 3rem;
+}
+
+.blog-body .blog-list-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-body .blog-list-wrapper a {
+    padding: 0.5rem;
+    color: white;
+    transition: all 0.5s;
+}
+
+.blog-body .blog-list-wrapper a:nth-child(1) {
+    padding: 0 0.5rem 0.5rem 0.5rem;
+}
+
+/* --------------------------------------------------------
+
+-------------- LOGIN FORM ---------------------------------
+
+----------------------------------------------------------- */
+
+.login-body {
+    background: black;
+}
+
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 90vh;
+}
+
+.login-wrapper .login-form {
+    width: 70%;
+    padding: 1rem;
+}
+
+#form-header {
+    display: flex;
+    padding-bottom: 1rem;
+    align-items: center;
+}
+
+.login-wrapper .login-form  h1 {
+    color: white;
+}
+
+#form-header i {
+    color: white;
+    margin-left: .5rem;
+}
+
+.login-wrapper .login-form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-wrapper .login-form form input {
+    width: 100%;
+    padding: 1rem;
+}
+
+.login-wrapper .login-form form input[type="submit"] {
+    margin-top: 1rem;
+}
+
+/*------------------------------------------------------ */
+
+#dash-form {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 4rem;
+    background: red;
+}
+
+#dash-form p {
+    color: white;
+}
+
+#dash-form-top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+#header-input {
+    flex: 1;
+    width: 100%;
+}
+
+#header-input input, #date-input input {
+    width: 70%;
+}
+
+#date-input {
+    flex: 1;
+    width: 100%;
+}
+
+#keywords-input {
+    padding-bottom: 1rem;
+}
+
+#keywords-input input {
+    width: 100%; 
+}
+
+#dash-form textarea {
+    margin-bottom: 1rem;
+    padding: .5rem;
+    width: 100%;
+}
+
+#dash-submit {
+    width: 100%;
+    padding: 1rem 0;
+}
+
+#existing-section {
+    text-align: center;
+}
+
+#existing-section h2 {
+    color: white;
+}
+
+ #blog-list-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+ .blog-link {
+    width: 25%;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+ .blog-link a {
+    color: white;
+    transition: all 0.5s;
+}
+
+#logout-button {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: none;
+    padding: 0.5rem 1rem;
+    border: 2px solid white;
+    width: 150px;
+    text-align: center;
+    color: white;
+}
+
+.control-wrapper {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.control-wrapper a {
+    background: none;
+    padding: 0.5rem 1rem;
+    border: 2px solid white;
+    width: 150px;
+    text-align: center;
+    color: white;
+    display: block;
+}
+
+.control-wrapper a:nth-child(1) {
+    margin: 0 0 1rem 0;
+}
+
+#errorWrapper {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    display: flex;
+    border: 2px solid white;
+    padding: 1rem;
+    
+}
+
+#errorWrapper button {
+    margin-left: 1rem;
+}
+
+/* --------------------------------------------------------
+
+-------------- SPEECH QUIZ ---------------------------------
+
+----------------------------------------------------------- */
+
+
+.question-tube input {
+    color: white;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.question-tube a {
+    display: inline-block;
+
+}
+
+.question-tube a:visited {
+    color: white;
+}
+
+.question-tube {
+    color: white;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: thin solid white;
+}
+
+.question-tube p {
+    color: white;
+}
+
+.question-tube .image-holder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.question-tube .image-holder img {
+    width: 50%;
+    height: auto;
+}
+
+.record-holder {
+    padding: 1rem;
+    border: thin solid white;
+}
+
+.record-holder .record h5 {
+    font-size: 1.5rem;
+    color:white;
+}
+
+.record-holder .record{
+    display: flex;
+    padding: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.record-holder .record:nth-child(odd){
+    background: rgb(95, 95, 95);
+}
+
+.recordHead {
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.example-tube-head {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.recordBtn {
+    border: thin solid white;
+    padding: 1rem;
+    display: inline-block;
+}
+
+.recordBtn:visited {
+    border: thin solid white;
+    padding: 1rem;
+}
+
+
+/* --------------------------------------------------------
+
+-------------- ANIMATIONS ---------------------------------
+
+----------------------------------------------------------- */
+
+
+@keyframes spin {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+@keyframes color-change {
+    0% {background: red;}
+    25% {background: orange;}
+    50% {background: yellow;}
+    75% {background: blue;}
+    100% {background: red;}
+}
+
+@keyframes circle-resize-1 {
+    0% {opacity: .5;}
+    50% {opacity: .8;}
+    75% {opacity: .3;}
+    100% {opacity: .5;}
+}
+
+@keyframes circle-resize-2 {
+    0% {opacity: 1;}
+    50% {opacity: .7;}
+    75% {opacity: .2;}
+    100% {opacity: 1;}
+}
+
+@keyframes circle-resize-3 {
+    0% {opacity: .2;}
+    50% {opacity: 1;}
+    75% {opacity: .6;}
+    100% {opacity: .2;}
+}
+
+.header-section .header-content .card-holder a:hover {
+    background: red;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+.header-list h1:hover {
+    color: rgb(214, 57, 57);
+}
+
+.nav-link:hover {
+    color: rgb(214, 57, 57);
+}
+
+#ul-list i:hover {
+    color: rgb(214, 57, 57);
+}
+
+.right-shoulder a:hover, .blog-link a:hover {
+    color: rgb(214, 57, 57);
+}
+
+.buttonContainer .btn:hover {
+    color: rgb(214, 57, 57);
+}
+
+.blog-body .blog-list-wrapper a:hover {
+    color: rgb(214, 57, 57);
+}
+
+.blog-wrapper .col:hover {
+    background: rgb(75, 75, 75); 
+}
+
+#footer a:hover {
+    color: rgb(214, 57, 57);
+}
+
+@media (max-width: 450px) {
+
+    /* ---- Canceling vertical heights on mobile --- */
+    .info-section {
+        height: 600px;
+    }
+
+    .info-section #first_set {
+        width: 100%;
+        color: white;
+        flex: 1;
+    
+    }
+    
+    .info-section #first_set h2 {
+        padding-bottom: 2rem;
+    
+    }
+    
+    .info-section p {
+        line-height: 20px;
+    
+    }
+    
+    .info-section #second_set {
+        width: 100%;
+        color: white;
+        flex: 1;
+        display: none;
+    }
+    
+    .info-section #second_set img{
+        width: 300px;
+    }
+
+    .other-header-section {
+        height: 200px;
+    }
+
+    .header-section {
+        height: 600px;
+    }
+
+    /* ------------------------------------------ */
+
+    /* --------- Headers *----------------- */
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .header-list h1 {
+        font-size: 1.5rem;
+    }
+
+    /* ------------------------------------- */
+
+    #spin-back {
+        width: 800px;
+        height: 800px;
+        animation-name: spin;
+        animation-iteration-count: infinite;
+        animation-duration: 200s;
+        animation-timing-function: linear;
+    }
+
+    .header-section .header-content .card-holder {
+        padding: 3rem 1rem 0 1rem;
+    }
+    
+    .header-section .header-content .card-holder .card {
+        flex: 1;
+        padding: 1.5rem;
+        background: white;
+        color: black;
+    }
+    
+    .header-section .header-content .card-holder .card:nth-child(1) {
+        margin-right: 2rem;
+    }
+
+    .intro-wrapper .intro .info-desc {
+        width: 75%;
+        color: white;
+        padding-bottom: 1.5rem;
+    }
+
+    .intro-wrapper .intro .i-wrapper i {
+        font-size: 20px;
+        padding: 0.5rem;
+    }
+
+    .form-wrapper {
+        width: 80%;
+        color: white;
+    }
+    
+    label {
+        font-size: 25px;
+    }
+    
+    .form-row {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+    }
+
+    form .form-row:nth-child(5) {
+        flex-direction: column;
+    }
+    
+    .radio-set {
+        display: flex;
+        padding-bottom: 1rem;
+    }
+    
+    .radio-set label {
+        padding: 0 1rem;
+    }
+    
+    .radio-set input {
+        padding: 0 1rem;
+    }
+
+    #social-bar {
+        position: relative;
+        display: none;
+
+    }
+
+    .back-black {
+        background: black;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    #social-bar-mobile {
+        display: flex;
+        border: 3px solid white;
+        width: 300px;
+        margin: auto;
+
+    }
+
+    #social-bar-mobile #ul-list {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+
+    .top-sec {
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .top-sec .header-container {
+        text-align: left;
+        width: 100%;
+    }
+
+    .top-sec h3 {
+        font-size: 1.5rem;
+    }
+    
+    .right-shoulder {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 1rem 0;
+        width: 100%;
+        justify-content: flex-end;
+    }
+    
+    .right-shoulder a {
+        padding: 0.5rem;
+        color: white;
+        text-decoration: none;
+        border: 2px solid white;
+        transition: all 0.5s;
+    }
+    
+    .right-shoulder i {
+        font-size: 20px;
+        color: white;
+        padding: 0 .5rem;
+    }
+
+    /* ----------------------------------- */
+
+    .blog-body {
+        background: black;
+        height: auto;
+    }
+
+
+.blog-body .blog-wrap {
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+.blog-wrapper .col {
+    margin: 1rem 0;
+}
+
+.blog-wrap h3 {
+    font-size: 1.5rem;
+}
+
+.blog-wrap h2 {
+    font-size: 2rem;
+}
+
+.blog-body .blog-wrap .blog-top {
+    height: 50px;
+    border-bottom: 2px solid white;
+    margin-bottom: 2rem;
+
+}
+
+.blog-body .blog-wrap .side-blog-section {
+    padding-top: 4rem;
+    padding-right: 1.5rem;
+    color: white;
+    flex: 1;
+}
+
+.blog-body .blog-wrap .main-blog-section {
+    padding-top: 4rem;
+    color: white;
+    flex: 3;
+}
+
+.blog-body .blog-wrap .main-blog-section .description {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.blog-body .blog-wrap .main-blog-section .blog-single-keys {
+    display: flex;
+}
+
+.blog-body .blog-wrap .main-blog-section .blog-single-keys .keyword {
+    background: white;
+    border-radius: 25%;
+    padding: 0.25rem;
+    margin: 0 0 0 .5rem;
+    color: black;
+}
+
+.blog-body .blog-wrap .main-blog-section #blog-single-header {
+    margin-bottom: 4rem;
+}
+
+.blog-body .blog-wrap .main-blog-section .blog-content-wrapper {
+    width: 80%;
+    padding-bottom: 3rem;
+}
+
+.blog-body .blog-list-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-body .blog-list-wrapper a {
+    padding: 0.5rem;
+    color: white;
+    transition: all 0.5s;
+}
+
+.blog-body .blog-list-wrapper a:nth-child(1) {
+    padding: 0 0.5rem 0.5rem 0.5rem;
+}
+
+label {
+    font-size: 20px;
+}
+
+/* -------------------------------------------- */
+
+.inputrow {
+    width: 100%;
+    display: block;
+}
+
+.example-tube h4 {
+    font-size: 2rem;
+    color: white;
+    padding-bottom: 1rem;
+}
+
+.example-tube .inputrow input[type="text"] {
+    width: 100%;
+}
+
+.example-tube input[type="submit"] {
+    width:100%;
+}
+
+.example-tube .bottom {
+    padding: 1rem;
+    width: 100%;
+}
+
+.recordBtn {
+    border: thin solid white;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.recordBtn:visited {
+    border: thin solid white;
+    padding: 1rem;
+}
+    
+}
+
+@media (max-width: 900px) and (min-width: 451px) {
+
+    #spin-back {
+        width: 1400px;
+        height: 1400px;
+        animation-name: spin;
+        animation-iteration-count: infinite;
+        animation-duration: 200s;
+        animation-timing-function: linear;
+    }
+
+}
